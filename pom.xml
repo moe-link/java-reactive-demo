@@ -12,6 +12,7 @@
     <!-- 模块加载 -->
     <modules>
         <module>server-core</module>
+        <module>server-base</module>
         <module>server-module-user</module>
         <module>server-module-order</module>
     </modules>
