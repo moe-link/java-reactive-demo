@@ -4,5 +4,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
 @Configuration
-public class CacheConfig implements WebFluxConfigurer {
+public class ExceptionConfig implements WebFluxConfigurer {
+
 }
