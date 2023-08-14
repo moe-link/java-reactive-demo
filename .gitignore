@@ -1,6 +1,7 @@
 HELP.md
 target/
 **/src/test/
+.flattened-pom.xml
 
 ### STS ###
 .apt_generated
