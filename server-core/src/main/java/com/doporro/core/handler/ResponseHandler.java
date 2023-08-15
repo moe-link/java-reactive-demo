@@ -10,7 +10,6 @@ import reactor.util.annotation.NonNull;
 
 import java.util.List;
 
-//@Component
 public class ResponseHandler extends ResponseBodyResultHandler {
 
     @Override
