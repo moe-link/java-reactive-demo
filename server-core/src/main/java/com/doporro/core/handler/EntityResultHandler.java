@@ -8,10 +8,13 @@ import org.springframework.web.reactive.result.method.annotation.ResponseEntityR
 
 import java.util.List;
 
-@Component
-public class EntityHandler extends ResponseEntityResultHandler {
+//@Component
+public class EntityResultHandler extends ResponseEntityResultHandler {
 
-    public EntityHandler(List<HttpMessageWriter<?>> writers, RequestedContentTypeResolver resolver, ReactiveAdapterRegistry registry) {
+    public EntityResultHandler(
+            List<HttpMessageWriter<?>> writers, RequestedContentTypeResolver resolver, ReactiveAdapterRegistry registry
+    ) {
         super(writers, resolver, registry);
     }
+
 }

@@ -1,18 +1,22 @@
 package com.doporro.core;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.data.r2dbc.R2dbcDataAutoConfiguration;
-import org.springframework.boot.autoconfigure.r2dbc.R2dbcAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+//import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication(
-        scanBasePackages = {"com.doporro.module", "com.doporro.core"},
-        exclude = {R2dbcAutoConfiguration.class, R2dbcDataAutoConfiguration.class}
+        scanBasePackages = {"com.doporro.module", "com.doporro.core"}
 )
-public class Application {
+public class Application  {
+    //extends SpringBootServletInitializer
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder().run(args);
+        new SpringApplicationBuilder().sources(Application.class).run(args);
     }
+
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//        return builder.sources(Application.class);
+//    }
 
 }

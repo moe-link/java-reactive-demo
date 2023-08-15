@@ -27,6 +27,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <flatten.maven.plugin.version>1.2.7</flatten.maven.plugin.version>
         <r2dbc.postgresql.version>0.8.13.RELEASE</r2dbc.postgresql.version>
+        <snakeyaml.version>2.0</snakeyaml.version>
         <mybatis.flex.version>1.5.7</mybatis.flex.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
     </properties>
@@ -101,9 +102,13 @@
             <artifactId>postgresql</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-postgresql</artifactId>
+            <version>${r2dbc.postgresql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-pool</artifactId>
         </dependency>
         <dependency>
             <groupId>io.projectreactor</groupId>
@@ -111,13 +116,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.r2dbc</groupId>
-            <artifactId>r2dbc-pool</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>io.r2dbc</groupId>
-            <artifactId>r2dbc-postgresql</artifactId>
-            <version>${r2dbc.postgresql.version}</version>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>${snakeyaml.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mybatis-flex</groupId>
