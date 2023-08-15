@@ -3,7 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>server-base</artifactId>
-    <version>${revision}</version>
     <name>server-base</name>
     <description>server-base</description>
 
@@ -11,12 +10,23 @@
     <parent>
         <groupId>com.doporro</groupId>
         <artifactId>java-reactive-demo</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0</version>
+<!--        <version>${revision}</version>-->
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>${maven.compiler.plugin.version}</version>-->
+<!--                <configuration>-->
+<!--                    <source>${java.version}</source>-->
+<!--                    <target>${java.version}</target>-->
+<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

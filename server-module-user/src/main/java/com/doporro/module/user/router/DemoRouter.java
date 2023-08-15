@@ -1,7 +1,6 @@
-package com.doporro.module.user.router.v1;
+package com.doporro.module.user.router;
 
 import com.doporro.module.user.handler.UserHelloHandler;
-import jakarta.annotation.Resource;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
