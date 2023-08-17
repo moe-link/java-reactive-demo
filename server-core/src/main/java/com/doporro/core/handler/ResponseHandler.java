@@ -21,7 +21,4 @@ public class ResponseHandler extends ResponseBodyResultHandler {
         super(writers, resolver);
     }
 
-
-
-
 }

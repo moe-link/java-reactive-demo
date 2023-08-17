@@ -29,6 +29,7 @@
         <r2dbc.postgresql.version>0.8.13.RELEASE</r2dbc.postgresql.version>
         <snakeyaml.version>2.0</snakeyaml.version>
         <mybatis.flex.version>1.5.7</mybatis.flex.version>
+        <guava.version>32.1.2-jre</guava.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
     </properties>
 
@@ -129,6 +130,11 @@
             <groupId>com.mybatis-flex</groupId>
             <artifactId>mybatis-flex-spring-boot-starter</artifactId>
             <version>${mybatis.flex.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
