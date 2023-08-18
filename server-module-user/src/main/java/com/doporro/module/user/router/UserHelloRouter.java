@@ -13,7 +13,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
 @RequiredArgsConstructor
-public class DemoRouter {
+public class UserHelloRouter {
 
     @NonNull
     private UserHelloHandler userHelloHandler;
