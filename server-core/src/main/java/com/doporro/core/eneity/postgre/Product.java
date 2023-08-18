@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
-@Table("tb_product")
+@Table(name = "tb_product")
 public class Product implements Serializable {
 
     @Serial

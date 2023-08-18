@@ -11,9 +11,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-@Table("tb_user")
 @Accessors(chain = true)
 @NoArgsConstructor
+@Table(name = "tb_user")
 public class User implements Serializable {
 
     @Serial
