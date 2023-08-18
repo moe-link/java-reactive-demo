@@ -1,4 +1,4 @@
-package com.doporro.base.eneity.postgre;
+package com.doporro.base.entity.postgre;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,18 +8,24 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
-@Table(name = "tb_product")
-public class Product implements Serializable {
+@Table(name = "tb_user")
+public class User implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
     private Long id;
-    private String description;
+    private String nickname;
+    private String username;
+    private String password;
+    private Integer telephone;
+    private LocalDateTime createTime;
+    private LocalDateTime UpdateTime;
 
 }
