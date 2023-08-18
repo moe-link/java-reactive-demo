@@ -1,6 +1,6 @@
 package com.doporro.base.service.impl;
 
-import com.doporro.base.repository.postgre.ProductRepository;
+import com.doporro.base.repository.postgres.ProductRepository;
 import com.doporro.base.service.intf.IProductService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

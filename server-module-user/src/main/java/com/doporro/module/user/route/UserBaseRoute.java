@@ -16,7 +16,7 @@ public class UserBaseRoute {
     private UserBaseHandler userBaseHandler;
 
     @Bean
-    public RouterFunction<ServerResponse> reactorRouterFunction() {
+    public RouterFunction<ServerResponse> reactorRouterFunction1() {
         return RouterFunctions.nest(
                 RequestPredicates.path("user/base").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
                 RouterFunctions
