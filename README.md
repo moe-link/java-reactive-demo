@@ -1,4 +1,4 @@
-# java reactive web template
+# spring reactive web template
 <p>
     <a href="https://gitee.com/moesama-zzt/java_boot_demo.git"><img src="https://img.shields.io/badge/Github-%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80-blue" alt="Github"></a>
 </p>
