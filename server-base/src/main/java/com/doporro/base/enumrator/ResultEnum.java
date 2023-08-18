@@ -1,4 +1,4 @@
-package com.doporro.core.enumrator;
+package com.doporro.base.enumrator;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

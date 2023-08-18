@@ -1,9 +1,8 @@
-package com.doporro.core.convert;
+package com.doporro.base.convert;
 
 import org.mapstruct.Mapper;
 
 @Mapper
 @SuppressWarnings("unused")
-public interface UserConvert {
-
+public interface OrderConvert {
 }
