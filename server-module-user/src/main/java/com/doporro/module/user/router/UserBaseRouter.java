@@ -21,6 +21,6 @@ public class UserBaseRouter {
                 RequestPredicates.path("user/base").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
                 RouterFunctions
                         .route(RequestPredicates.GET("/delteUser"), request -> userBaseHandler.deleteUser())
-                        .andRoute(RequestPredicates.POST("/hello2"), request -> userBaseHandler.createUser(request)));
+                        .andRoute(RequestPredicates.POST("/createUser"), request -> userBaseHandler.createUser(request)));
     }
 }
