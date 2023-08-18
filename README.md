@@ -6,4 +6,4 @@
 ### 项目介绍
 `java reactive demo`对Spring Boot 3的基本开发框架进行了Webflux简单封装, 开发者可以在此基础上进行SpringBoot项目的开发
 ### 项目部署
-后续将会支持容器部署
+后续将会支持Docker容器部署以及GraalVM应用镜像打包
