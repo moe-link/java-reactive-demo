@@ -1,6 +1,6 @@
-package com.doporro.core.repository.postgre;
+package com.doporro.base.repository.postgre;
 
-import com.doporro.core.eneity.postgre.Product;
+import com.doporro.base.eneity.postgre.Product;
 import org.springframework.data.r2dbc.repository.R2dbcRepository;
 import org.springframework.stereotype.Repository;
 

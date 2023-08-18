@@ -19,6 +19,11 @@
     <dependencies>
         <dependency>
             <groupId>com.doporro</groupId>
+            <artifactId>server-base</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.doporro</groupId>
             <artifactId>server-module-user</artifactId>
             <version>${revision}</version>
         </dependency>

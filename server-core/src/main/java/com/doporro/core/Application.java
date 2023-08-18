@@ -2,10 +2,9 @@ package com.doporro.core;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-//import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication(
-        scanBasePackages = {"com.doporro.module", "com.doporro.core"}
+        scanBasePackages = {"com.doporro.core", "com.doporro.base", "com.doporro.module"}
 )
 public class Application  {
     //extends SpringBootServletInitializer

@@ -1,4 +1,4 @@
-package com.doporro.module.user.router;
+package com.doporro.module.user.route;
 
 import com.doporro.module.user.handler.UserHelloHandler;
 import lombok.NonNull;
@@ -13,7 +13,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
 @RequiredArgsConstructor
-public class UserHelloRouter {
+public class UserHelloRoute {
 
     @NonNull
     private UserHelloHandler userHelloHandler;

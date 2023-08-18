@@ -1,4 +1,4 @@
-package com.doporro.core.eneity.postgre;
+package com.doporro.base.eneity.postgre;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

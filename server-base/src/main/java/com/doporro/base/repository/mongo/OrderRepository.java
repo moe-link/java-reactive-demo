@@ -1,6 +1,6 @@
-package com.doporro.core.repository.mongo;
+package com.doporro.base.repository.mongo;
 
-import com.doporro.core.eneity.mongo.Order;
+import com.doporro.base.eneity.mongo.Order;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

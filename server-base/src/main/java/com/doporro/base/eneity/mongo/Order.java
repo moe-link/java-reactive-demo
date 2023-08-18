@@ -1,4 +1,4 @@
-package com.doporro.core.eneity.mongo;
+package com.doporro.base.eneity.mongo;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
