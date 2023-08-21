@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
-@Configuration
+@Configuration(proxyBeanMethods = false)
 @RequiredArgsConstructor
 public class UserHelloRoute {
 
@@ -20,6 +20,9 @@ public class UserHelloRoute {
 
     @Bean
     public RouterFunction<ServerResponse> reactorRouterFunction() {
+//        return RouterFunctions.route()
+//                .GET("/{hello}", RequestPredicates.accept(MediaType.APPLICATION_JSON), userHelloHandler.hello())
+//                .build();
         return RouterFunctions
                 .route(RequestPredicates.GET("/hello"), request -> userHelloHandler.hello())
                 .andRoute(RequestPredicates.POST("/hello2").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
