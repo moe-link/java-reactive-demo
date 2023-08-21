@@ -20,13 +20,14 @@ public class UserHelloRoute {
 
     @Bean
     public RouterFunction<ServerResponse> reactorRouterFunction() {
-//        return RouterFunctions.route()
-//                .GET("/{hello}", RequestPredicates.accept(MediaType.APPLICATION_JSON), userHelloHandler.hello())
-//                .build();
-        return RouterFunctions
-                .route(RequestPredicates.GET("/hello"), request -> userHelloHandler.hello())
-                .andRoute(RequestPredicates.POST("/hello2").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
-                        userHelloHandler::hello2);
+        return RouterFunctions.route()
+                .GET("/hello", request -> userHelloHandler.hello())
+                .POST("/hello2", RequestPredicates.accept(MediaType.APPLICATION_JSON), request -> userHelloHandler.hello2(request))
+                .build();
+//        return RouterFunctions
+//                .route(RequestPredicates.GET("/hello"), request -> userHelloHandler.hello())
+//                .andRoute(RequestPredicates.POST("/hello2").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
+//                        userHelloHandler::hello2);
     }
 
 }

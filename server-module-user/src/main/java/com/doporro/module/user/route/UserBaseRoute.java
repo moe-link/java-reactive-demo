@@ -20,7 +20,7 @@ public class UserBaseRoute {
         return RouterFunctions.nest(
                 RequestPredicates.path("user/base").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
                 RouterFunctions
-                        .route(RequestPredicates.GET("/delteUser"), request -> userBaseHandler.deleteUser())
+                        .route(RequestPredicates.GET("/deleteUser"), request -> userBaseHandler.deleteUser())
                         .andRoute(RequestPredicates.POST("/createUser"), request -> userBaseHandler.createUser(request)));
     }
 }
