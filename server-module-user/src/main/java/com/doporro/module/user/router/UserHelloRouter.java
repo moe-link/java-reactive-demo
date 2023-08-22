@@ -23,7 +23,7 @@ public class UserHelloRouter {
     @Bean
     public RouterFunction<ServerResponse> RouterFunctionUserHello() {
         return RouterFunctions.nest(RequestPredicates.path(PATH), RouterFunctions.route()
-                .GET("/", request -> userHelloHandler.hello())
+                .GET("", request -> userHelloHandler.hello())
                 .POST("/demo", RequestPredicates.accept(MediaType.APPLICATION_JSON), request -> userHelloHandler.demo(request))
                 .build()
         );

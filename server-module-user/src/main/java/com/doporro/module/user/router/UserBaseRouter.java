@@ -12,13 +12,15 @@ import org.springframework.web.reactive.function.server.*;
 @RequiredArgsConstructor
 public class UserBaseRouter {
 
+    private static final String PATH = "/user/base";
+
     @NonNull
     private UserBaseHandler userBaseHandler;
 
     @Bean
     public RouterFunction<ServerResponse> reactorRouterFunction1() {
         return RouterFunctions.nest(
-                RequestPredicates.path("user/base").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
+                RequestPredicates.path(PATH).and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
                 RouterFunctions
                         .route(RequestPredicates.GET("/deleteUser"), request -> userBaseHandler.deleteUser())
                         .andRoute(RequestPredicates.POST("/createUser"), request -> userBaseHandler.createUser(request)));
