@@ -13,12 +13,13 @@ import java.util.List;
 @Component
 public class UserHelloHandler {
 
-    public @NonNull Mono<ServerResponse> hello() {
+    public @NonNull Mono<ServerResponse>
+    hello() {
         Mono<String> hello = Mono.fromSupplier(()-> "hello");
         return ServerResponse.ok().body(hello, String.class);
     }
 
-    public @NonNull Mono<ServerResponse> hello2(ServerRequest request) {
+    public @NonNull Mono<ServerResponse> demo(ServerRequest request) {
         List<String> list = new ArrayList<>();
         Flux<String> hello2 = Flux.fromIterable(list);
         return ServerResponse.ok().body(hello2, String.class);

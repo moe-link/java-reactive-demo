@@ -1,4 +1,4 @@
-package com.doporro.module.user.route;
+package com.doporro.module.user.router;
 
 import com.doporro.module.user.handler.UserHelloHandler;
 import lombok.NonNull;
@@ -13,21 +13,21 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration(proxyBeanMethods = false)
 @RequiredArgsConstructor
-public class UserHelloRoute {
+public class UserHelloRouter {
+
+    private static final String PATH = "/user/hello";
 
     @NonNull
     private UserHelloHandler userHelloHandler;
 
     @Bean
-    public RouterFunction<ServerResponse> reactorRouterFunction() {
-        return RouterFunctions.route()
-                .GET("/hello", request -> userHelloHandler.hello())
-                .POST("/hello2", RequestPredicates.accept(MediaType.APPLICATION_JSON), request -> userHelloHandler.hello2(request))
-                .build();
-//        return RouterFunctions
-//                .route(RequestPredicates.GET("/hello"), request -> userHelloHandler.hello())
-//                .andRoute(RequestPredicates.POST("/hello2").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
-//                        userHelloHandler::hello2);
+    public RouterFunction<ServerResponse> RouterFunctionUserHello() {
+        return RouterFunctions.nest(RequestPredicates.path(PATH), RouterFunctions.route()
+                .GET("/", request -> userHelloHandler.hello())
+                .POST("/demo", RequestPredicates.accept(MediaType.APPLICATION_JSON), request -> userHelloHandler.demo(request))
+                .build()
+        );
+
     }
 
 }
