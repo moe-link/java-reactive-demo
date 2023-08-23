@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class UserHelloHandler {
+public class UserActionHandler {
 
     public @NonNull Mono<ServerResponse>
     hello() {

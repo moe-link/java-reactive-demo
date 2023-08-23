@@ -1,4 +1,4 @@
 package com.doporro.base.service.intf;
 
-public interface IProductService {
+public interface IUserActionService {
 }

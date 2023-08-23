@@ -11,7 +11,7 @@ import reactor.core.publisher.MonoSink;
 
 @Component
 @RequiredArgsConstructor
-public class UserBaseHandler {
+public class UserInfoHandler {
 
     /**
      * 创建用户

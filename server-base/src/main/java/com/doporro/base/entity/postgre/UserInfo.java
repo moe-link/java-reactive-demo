@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 @NoArgsConstructor
 @Table(name = "tb_user")
-public class User {
+public class UserInfo {
 
     @Id
     private Long id;

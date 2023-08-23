@@ -1,18 +1,19 @@
-package com.doporro.base.entity.mongo;
+package com.doporro.base.entity.postgre;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
-@Document(collection = "order")
-public class Order {
+@Table(name = "tb_product")
+public class ProductInfo {
 
     @Id
     private Long id;
+    private String description;
 
 }
