@@ -5,8 +5,8 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper
 @SuppressWarnings(value = "unused")
-public interface ProductConvert {
+public interface ProductInfoConvert {
 
-    ProductConvert INSTANCE = Mappers.getMapper(ProductConvert.class);
+    ProductInfoConvert INSTANCE = Mappers.getMapper(ProductInfoConvert.class);
 
 }
