@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
-@Table(name = "tb_product")
+@Table(name = "tb_product_info")
 public class ProductInfo {
 
     @Id

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
-@Table(name = "tb_user")
+@Table(name = "tb_user_info")
 public class UserInfo {
 
     @Id
