@@ -1,4 +1,4 @@
 package com.doporro.base.annotation;
 
-public @interface LoginAnotation {
+public @interface UserLogin {
 }
