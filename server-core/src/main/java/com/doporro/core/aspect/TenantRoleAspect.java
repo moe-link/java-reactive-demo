@@ -1,4 +1,4 @@
 package com.doporro.core.aspect;
 
-public class TenantAspect {
+public class TenantRoleAspect {
 }

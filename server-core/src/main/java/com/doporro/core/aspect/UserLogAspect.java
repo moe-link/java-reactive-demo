@@ -1,4 +1,4 @@
 package com.doporro.core.aspect;
 
-public class LogAspect {
+public class UserLogAspect {
 }
