@@ -4,5 +4,5 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
 @Configuration
-public class PageConfig implements WebFluxConfigurer {
+public class PagingConfig implements WebFluxConfigurer {
 }
